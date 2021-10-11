@@ -1,0 +1,14 @@
+<div class="homeContainer">
+    <hr>
+        <!-- Passing the comments array lenght-->
+        {{> commentHead totalCount=comments.length}}
+    <hr>
+    <!-- looping through the comments array to create a comment for each data object-->
+    {{#each comments}}
+        {{> comment this}}
+        <hr>
+    {{/each}}
+
+</div>
+
+
